@@ -1,10 +1,13 @@
 package com.example.cardsagainstacm;
 
-import android.os.Bundle;
 import android.app.Activity;
-import android.view.Menu;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
 
 public class LoadingScreen extends Activity {
+
+    private Client client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -12,12 +15,9 @@ public class LoadingScreen extends Activity {
         setContentView(R.layout.activity_loading_screen);
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.loading_screen, menu);
-        return true;
+    public void connect(View view){
+        //EditText ed = (EditText)findViewById(R.id.editText);
+        new Thread(new Client("10.18.82.71")).start();
     }
     
 }
