@@ -1,0 +1,23 @@
+import java.net.Socket;
+
+
+public class CAAServer {
+
+	public static int port;
+	public Socket[] clients;
+	
+	
+	public static void main(String args[]) {
+		port = Integer.parseInt(args[0]);
+		int numClients = Integer.parseInt(args[1]);
+		
+		CAAServer caa = new CAAServer();
+		caa.connectClients(numClients);
+		
+	}
+	
+	private void connectClients(int n) {
+		
+	}
+	
+}
