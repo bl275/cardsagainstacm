@@ -10,7 +10,7 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" android:id="@+id/textView"/>
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -22,9 +22,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Connect"
-            android:id="@+id/button" android:layout_below="@+id/editText" android:layout_centerHorizontal="true"
-            android:layout_marginTop="27dp"
-            android:onClick="connect"/>
+            android:id="@+id/button"
+            android:onClick="connect"
+            android:layout_alignBaseline="@+id/textView3" android:layout_alignBottom="@+id/textView3"
+            android:layout_centerHorizontal="true"/>
     <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -35,7 +36,14 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Output"
-            android:id="@+id/textView3" android:layout_centerVertical="true" android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"/>
+            android:id="@+id/textView3"
+            android:layout_marginBottom="109dp" android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Message"
+            android:id="@+id/button2" android:layout_below="@+id/editText" android:layout_alignRight="@+id/button"
+            android:layout_alignEnd="@+id/button" android:layout_marginTop="117dp" android:onClick="onClick"/>
 
 </RelativeLayout>

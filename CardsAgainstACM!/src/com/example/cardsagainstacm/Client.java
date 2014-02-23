@@ -2,6 +2,8 @@ package com.example.cardsagainstacm;
 
 import android.app.Activity;
 import android.util.Log;
+import android.widget.TextView;
+import org.w3c.dom.Text;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,7 +16,7 @@ import java.net.UnknownHostException;
 /**
  * Created by Olen on 2/22/14.
  */
-public class Client implements Runnable{
+public class Client extends Activity implements Runnable{
     private Socket clientSocket;
     private static final int portNumber = 6969;
     private PrintWriter clientOutput;
@@ -27,7 +29,12 @@ public class Client implements Runnable{
 
     public String getInput(){
         try {
-            return input.readLine();
+            if(input != null){
+            if(input.ready())
+                return input.readLine();
+            else
+                return "NO NEW INPUT";
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -43,14 +50,12 @@ public class Client implements Runnable{
         try {
             InetAddress serverAddr = InetAddress.getByName(hostName);
             clientSocket = new Socket(serverAddr, portNumber);
-            //clientOutput = new PrintWriter(clientSocket.getOutputStream(), true);
-            //input = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+            clientOutput = new PrintWriter(clientSocket.getOutputStream(), true);
+            input = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         } catch (UnknownHostException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 }

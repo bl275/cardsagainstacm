@@ -8,5 +8,5 @@ public class Client {
 	public Socket socket;
 	public PrintWriter out;
 	public BufferedReader in;
-	
+
 }

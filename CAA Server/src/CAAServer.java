@@ -12,8 +12,8 @@ public class CAAServer {
 	public static int port;
 	public static int numClients;
 	public Client[] clients;
-	
-	
+
+
 	public static void main(String args[]) {
 		port = Integer.parseInt(args[0]);
 		numClients = Integer.parseInt(args[1]);
@@ -36,29 +36,31 @@ public class CAAServer {
 		} catch (Exception e1) {
 			System.err.println("Fuck.");
 		}
-		
+
 	}
-	
+
 	private void connectClients(int n) throws IOException {
 		clients = new Client[n];
-		
+
 		ServerSocket ss = new ServerSocket(port);
 		for(int i = 0; i < n; i++) {
+            clients[i] = new Client();
+
 			// set client socket
+            System.out.println("ima poop");
 			clients[i].socket = ss.accept();
-			ss = new ServerSocket(port);
-			
+            System.out.println("client connected");
 			// set client IO
 			clients[i].out = new PrintWriter(clients[i].socket.getOutputStream(), true);
 			clients[i].in = new BufferedReader(new InputStreamReader(clients[i].socket.getInputStream()));
 		}
-		ss.close();
 	}
 	
 	private void sendMessage(String s) {
 		for(int i = 0; i < numClients; i++) {
 			clients[i].out.println(s);
 		}
+        System.out.println("Message Sent");
 	}
 	
 	private void receiveMessages() {

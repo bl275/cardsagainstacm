@@ -19,7 +19,8 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="host" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="554b058b-a1d9-4c0c-95a3-ae15ef6b6925" name="Default" comment="" />
@@ -87,12 +88,12 @@
     <leaf>
       <file leaf-file-name="activity_loading_screen.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CardsAgainstACM!/res/layout/activity_loading_screen.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="46" selection-start="587" selection-end="587" vertical-scroll-proportion="-8.16" vertical-offset="0" max-vertical-offset="799">
+          <provider editor-type-id="text-editor">
+            <state line="16" column="38" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="935">
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-designer">
+          <provider selected="true" editor-type-id="android-designer">
             <state />
           </provider>
         </entry>
@@ -100,7 +101,7 @@
       <file leaf-file-name="Client.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CardsAgainstACM!/src/com/example/cardsagainstacm/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="14" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="1054">
+            <state line="36" column="13" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="1139">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,7 +124,7 @@
       <file leaf-file-name="LoadingScreen.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CardsAgainstACM!/src/com/example/cardsagainstacm/LoadingScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="25" selection-start="176" selection-end="176" vertical-scroll-proportion="0.20816326" vertical-offset="0" max-vertical-offset="510">
+            <state line="35" column="8" selection-start="975" selection-end="975" vertical-scroll-proportion="0.5201613" vertical-offset="337" max-vertical-offset="986">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,9 +144,9 @@
       <list>
         <option value="$PROJECT_DIR$/CardsAgainstACM!/src/Client.java" />
         <option value="$PROJECT_DIR$/CardsAgainstACM!/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/CardsAgainstACM!/src/com/example/cardsagainstacm/Client.java" />
-        <option value="$PROJECT_DIR$/CardsAgainstACM!/src/com/example/cardsagainstacm/LoadingScreen.java" />
         <option value="$PROJECT_DIR$/CardsAgainstACM!/res/layout/activity_loading_screen.xml" />
+        <option value="$PROJECT_DIR$/CardsAgainstACM!/src/com/example/cardsagainstacm/LoadingScreen.java" />
+        <option value="$PROJECT_DIR$/CardsAgainstACM!/src/com/example/cardsagainstacm/Client.java" />
       </list>
     </option>
   </component>
@@ -371,6 +372,7 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -559,15 +561,15 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32987013" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33636364" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32207793" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.073125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32987013" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.101875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -658,6 +660,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CardsAgainstACM!/res/layout/activity_loading_screen.xml">
+      <provider editor-type-id="text-editor">
+        <state line="16" column="38" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="935">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CardsAgainstACM!/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="77" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
@@ -670,26 +682,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CardsAgainstACM!/src/com/example/cardsagainstacm/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="14" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="1054">
+        <state line="36" column="13" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="354" max-vertical-offset="1139">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CardsAgainstACM!/res/layout/activity_loading_screen.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="46" selection-start="587" selection-end="587" vertical-scroll-proportion="-8.16" vertical-offset="0" max-vertical-offset="799">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CardsAgainstACM!/src/com/example/cardsagainstacm/LoadingScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="176" selection-end="176" vertical-scroll-proportion="0.20816326" vertical-offset="0" max-vertical-offset="510">
+        <state line="35" column="8" selection-start="975" selection-end="975" vertical-scroll-proportion="0.5201613" vertical-offset="337" max-vertical-offset="986">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
